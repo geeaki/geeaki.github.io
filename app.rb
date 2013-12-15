@@ -3,6 +3,8 @@ $:.unshift File.dirname(__FILE__)
 require 'bundler/setup'
 Bundler.require(:default)
 
+use Rack::Static, :urls => ['/images']
+
 helpers do
   def pages_path
     "#{settings.root}/pages"
