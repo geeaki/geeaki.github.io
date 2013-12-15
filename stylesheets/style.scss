@@ -1,1 +1,32 @@
 @import "vendor/normalize";
+
+body {
+  background: #dec052;
+  background: -moz-linear-gradient(top, #dec052 0%, #f2eecb 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#dec052), color-stop(100%,#f2eecb));
+  background: -webkit-linear-gradient(top, #dec052 0%,#f2eecb 100%);
+  background: -o-linear-gradient(top, #dec052 0%,#f2eecb 100%);
+  background: -ms-linear-gradient(top, #dec052 0%,#f2eecb 100%);
+  background: linear-gradient(to bottom, #dec052 0%,#f2eecb 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dec052', endColorstr='#f2eecb',GradientType=0 );
+  color: #666;
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.main {
+  padding: 20px;
+  background: #fff;
+}
+
+header, footer {
+  margin: 20px 0;
+  text-align: center;
+  a {
+    color: #333;
+    text-decoration: none;
+  }
+}
