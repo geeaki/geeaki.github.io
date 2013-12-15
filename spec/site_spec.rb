@@ -8,5 +8,6 @@ describe 'This site' do
 
   it do
     get '/index.html'
+    get '/stylesheets/style.css'
   end
 end
