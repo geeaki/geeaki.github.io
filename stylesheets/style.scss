@@ -30,3 +30,19 @@ header, footer {
     text-decoration: none;
   }
 }
+
+blockquote {
+  padding: 10px 20px;
+  background: #efefef;
+  color: #999;
+
+  cite {
+    display: block;
+    text-align: right;
+  }
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
