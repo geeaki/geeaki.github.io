@@ -5,6 +5,10 @@ gem 'redcarpet'
 gem 'sass'
 gem 'slim'
 
+group :development do
+  gem 'guard-livereload'
+end
+
 group :test do
   gem 'sitespec'
 end
