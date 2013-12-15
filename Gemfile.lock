@@ -30,6 +30,8 @@ GEM
       em-websocket (~> 0.5)
       guard (~> 2.0)
       multi_json (~> 1.8)
+    guard-pow (2.0.0)
+      guard (~> 2.0)
     http_parser.rb (0.5.3)
     listen (2.4.0)
       celluloid (>= 0.15.2)
@@ -74,6 +76,7 @@ PLATFORMS
 
 DEPENDENCIES
   guard-livereload
+  guard-pow
   redcarpet
   sass
   sinatra!

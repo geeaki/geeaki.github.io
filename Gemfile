@@ -6,6 +6,7 @@ gem 'sass'
 gem 'slim'
 
 group :development do
+  gem 'guard-pow'
   gem 'guard-livereload'
 end
 
