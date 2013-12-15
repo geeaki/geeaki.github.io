@@ -1,0 +1,19 @@
+language: ruby
+env:
+  global:
+    - GIT_COMMITTER_NAME: "deeeki"
+    - GIT_COMMITTER_EMAIL: "deeeki@gmail.com"
+    - GIT_AUTHOR_NAME: "deeeki"
+    - GIT_AUTHOR_EMAIL: "deeeki@gmail.com"
+    - secure: "Enfo/pmE/iqApoZsINZ5pTE4K+kLUodOUfQHtMioLHKzZ0H5tbWOUOSnOIf/OOpPioNWQqWT0Abw7+Ms/BQ32wIAlYP7sXge9VjwQZFzHu1+W0GaMkE3UZ9k/Z9Eifz+C/vTa4kSR36+gdLxVG7z799wNd8JvwMoyzPGOXFshg0="
+script:
+    - bundle exec rspec
+after_success:
+    - cd build
+    - git init
+    - git add --all
+    - git commit -m "Update from Travis CI"
+    - 'git push --quiet https://$GITHUB_TOKEN@github.com/geeaki/geeaki.github.io.git master -f 2> /dev/null'
+branches:
+  only:
+    - source
