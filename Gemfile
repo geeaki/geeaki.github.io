@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem 'sinatra'
+gem 'sinatra', github: 'sinatra/sinatra'
 gem 'sitespec'
 gem 'redcarpet'
 gem 'sass'
