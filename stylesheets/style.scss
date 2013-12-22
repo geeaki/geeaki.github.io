@@ -14,6 +14,9 @@ body {
 
 a {
   color: #d30;
+  &:hover, &:focus {
+    color: #f30;
+  }
 }
 
 .container {
@@ -22,7 +25,8 @@ a {
 }
 
 .main {
-  padding: 20px;
+  clear: both;
+  padding: 10px 20px 20px;
   background: #fff;
 }
 
@@ -32,6 +36,9 @@ header, footer {
   a {
     color: #333;
     text-decoration: none;
+    &:hover, &:focus {
+      color: #333;
+    }
   }
 }
 
@@ -53,4 +60,25 @@ img {
 
 .aki {
   color: #d30;
+}
+
+nav {
+  background: #fff;
+  padding: 10px 0 20px;
+  ul {
+    list-style-type: none;
+    li {
+      float: left;
+      line-height: 20px;
+      a {
+        display: block;
+        padding: 0 20px;
+        border-right: 1px solid #ccc;
+        color: #333;
+      }
+      &:last-child a {
+        border-right: none;
+      }
+    }
+  }
 }
