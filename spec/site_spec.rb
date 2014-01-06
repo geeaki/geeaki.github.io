@@ -12,5 +12,6 @@ describe 'This site' do
     get '/stylesheets/style.css'
     get '/images/favicon.ico'
     get '/images/geeaki_living.jpg'
+    get '/images/arduino_meetup.jpg'
   end
 end
