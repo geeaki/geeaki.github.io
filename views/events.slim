@@ -1,0 +1,8 @@
+- events.each do |event|
+  h4= event.date
+  h3
+    - if event.url
+      a href=event.url
+        = event.title
+    - else
+      = event.title
