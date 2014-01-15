@@ -31,6 +31,11 @@ get '/events/index.html' do
   slim :events, locals: { events: hash_events.map{|e| OpenStruct.new(e) } }
 end
 
+get '/links/index.html' do
+  path = "#{pages_path}/links.md"
+  slim :index, locals: { page: File.read(path) }
+end
+
 get '/stylesheets/style.css' do
   scss :style, views: 'stylesheets'
 end
