@@ -33,7 +33,7 @@ end
 
 get '/links/index.html' do
   path = "#{pages_path}/links.md"
-  slim :index, locals: { page: File.read(path) }
+  slim :links, locals: { page: File.read(path) }
 end
 
 get '/stylesheets/style.css' do
