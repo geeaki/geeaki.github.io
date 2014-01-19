@@ -10,6 +10,7 @@ describe 'This site' do
     get '/index.html'
     get '/events/index.html'
     get '/links/index.html'
+    get '/broadcast/index.html'
     get '/stylesheets/style.css'
     get '/images/favicon.ico'
     get '/images/geeaki_living.jpg'

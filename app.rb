@@ -36,6 +36,10 @@ get '/links/index.html' do
   slim :links, locals: { page: File.read(path) }
 end
 
+get '/broadcast/index.html' do
+  slim :broadcast
+end
+
 get '/stylesheets/style.css' do
   scss :style, views: 'stylesheets'
 end
