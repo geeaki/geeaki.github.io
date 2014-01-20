@@ -37,7 +37,8 @@ get '/links/index.html' do
 end
 
 get '/broadcast/index.html' do
-  slim :broadcast
+  path = "#{pages_path}/broadcast.md"
+  slim :broadcast, locals: { page: File.read(path) }
 end
 
 get '/stylesheets/style.css' do
