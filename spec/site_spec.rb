@@ -16,5 +16,6 @@ describe 'This site' do
     get '/images/favicon.ico'
     get '/images/geeaki_living.jpg'
     get '/images/arduino_meetup.jpg'
+    get '/images/drinkup_03.jpg'
   end
 end
