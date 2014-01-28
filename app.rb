@@ -11,8 +11,9 @@ helpers do
     "#{settings.root}/config"
   end
 
-  def pages_path
-    "#{settings.root}/pages"
+  def page
+    page_name = request.path_info.scan(%r[^/(\w+)/]).flatten.first || 'index'
+    File.read("#{settings.root}/pages/#{page_name}.md")
   end
 
   def markdown markdown_text
@@ -22,8 +23,7 @@ helpers do
 end
 
 get '/index.html' do
-  path = "#{pages_path}/index.md"
-  slim :index, locals: { page: File.read(path) }
+  slim :index
 end
 
 get '/events/index.html' do
@@ -32,18 +32,15 @@ get '/events/index.html' do
 end
 
 get '/links/index.html' do
-  path = "#{pages_path}/links.md"
-  slim :links, locals: { page: File.read(path) }
+  slim :links
 end
 
 get '/broadcast/index.html' do
-  path = "#{pages_path}/broadcast.md"
-  slim :broadcast, locals: { page: File.read(path) }
+  slim :broadcast
 end
 
 get '/jobs/index.html' do
-  path = "#{pages_path}/jobs.md"
-  slim :jobs, locals: { page: File.read(path) }
+  slim :jobs
 end
 
 get '/stylesheets/style.css' do
