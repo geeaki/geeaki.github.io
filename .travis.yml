@@ -7,13 +7,13 @@ env:
     - GIT_AUTHOR_EMAIL: "geekakiba@gmail.com"
     - secure: "ArPM/QcrsXa90D9PvSQanAL3YlFHSVWlcbAWHO3qaAnxrkG5nd7qE62WtYqp2+4GYPVHXZ9469n+QVObctAHdAhqBu/56UzztWrP+skB8mSinaMsbEmO+X1Aj2Z8B0kdo7h7bJqQ3fHpllYAg9xI9oUcUHbdckOG8rYILZoxsNE="
 script:
-    - bundle exec rspec
+  - bundle exec rspec
 after_success:
-    - cd build
-    - git init
-    - git add --all
-    - git commit -m "Update from Travis CI [ci skip]"
-    - 'git push --quiet https://$GITHUB_TOKEN@github.com/geeaki/geeaki.github.io.git master -f 2> /dev/null'
+  - cd build
+  - git init
+  - git add --all
+  - git commit -m "Update from Travis CI [ci skip]"
+  - 'git push --quiet https://$GITHUB_TOKEN@github.com/geeaki/geeaki.github.io.git master -f 2> /dev/null'
 branches:
   only:
     - source
