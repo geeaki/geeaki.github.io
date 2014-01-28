@@ -11,8 +11,20 @@ helpers do
     "#{settings.root}/config"
   end
 
+  def page_name
+    request.path_info.scan(%r[^/(\w+)/]).flatten.first || 'index'
+  end
+
+  def page_title
+    {
+      'events' => 'イベント',
+      'links' => 'リンク集',
+      'broadcast' => '配信',
+      'jobs' => 'ジョブボード',
+    }[page_name]
+  end
+
   def page
-    page_name = request.path_info.scan(%r[^/(\w+)/]).flatten.first || 'index'
     File.read("#{settings.root}/pages/#{page_name}.md")
   end
 
