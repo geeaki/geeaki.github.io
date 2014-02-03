@@ -1,5 +1,12 @@
 ### 配信一覧
 
+##### 2014-02-03
+
+#### [ギー秋Ust Vol.2](http://www.ustream.tv/recorded/43413136)
+
+- @hanachin_, @deeeki
+- コミュニティ/チーム開発/パスワード管理/pplog など ([アジェンダ](https://gist.github.com/deeeki/8750871))
+
 ##### 2014-02-02
 
 #### [ギー秋Ust Vol.1](http://www.ustream.tv/recorded/43368555)
