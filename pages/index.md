@@ -26,7 +26,7 @@
 - 初期費用の初月日割り＋デポジットを用意する（入居後1週間程度までにお願いします）
 - 布団と荷物を持って入居する。（ベッドはあるので、マットレスとか寝袋でOKな人はそれでもOK）
 
-入居、内覧などのお問い合せはTwitterアカウント [@geeaki](https://twitter.com/geeaki) またはFacebookメッセージにて[管理人(代理)](https://www.facebook.com/deeeki)までお気軽にどうぞ！
+入居、内覧などのお問い合せはTwitterアカウント [@geeaki](https://twitter.com/geeaki) またはFacebookメッセージにて[管理人](https://www.facebook.com/tokisaba)までお気軽にどうぞ！
 
 #### 必須要件
 
