@@ -22,3 +22,13 @@
 - [ギークハウス横浜](http://geekhouse.tumblr.com/post/42105825059/yokohama)
 - [ギークハウス新潟](http://www.geek-niigata.com/)
 - [ギークハウス沖縄](http://text.geeoki.com/)
+
+### その他
+
+- [『フルサトをつくる』目次と「はじめに」を公開します - phaの日記](http://pha.hateblo.jp/entry/2014/04/27/224041)
+- [意外にも（？）健康的：ギークだらけのシェアハウス「ギークハウス」に潜入してきた - ねとらぼ](http://nlab.itmedia.co.jp/nl/articles/1205/31/news031.html)
+
+### 書籍
+
+<a href="http://www.amazon.co.jp/gp/product/4774152242/?tag=pha-22" target="_blank"><img src="http://ecx.images-amazon.com/images/I/51SWyFzNj8L._SL500_.jpg" alt="4774152242" border="0" /></a>
+<a href="http://www.amazon.co.jp/gp/product/448780812X/?tag=pha-22" target="_blank"><img src="http://ecx.images-amazon.com/images/I/41gfrL38OuL._SL500_.jpg" alt="448780812X" border="0" /></a>
