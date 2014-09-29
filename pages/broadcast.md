@@ -1,5 +1,12 @@
 ### 配信一覧
 
+##### 2014-09-29
+
+#### [ギー秋Ust Vol.3](http://www.ustream.tv/recorded/53331277)
+
+- @urasin13_, @deeeki
+- PyCon/RubyKaigi/最近のギークハウス など
+
 ##### 2014-02-03
 
 #### [ギー秋Ust Vol.2](http://www.ustream.tv/recorded/43413136)
