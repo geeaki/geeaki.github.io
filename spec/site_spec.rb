@@ -1,21 +1,22 @@
 require File.expand_path('../../app', __FILE__)
-require 'sitespec'
+require 'sitespec/rspec'
 
-Sitespec.configuration.application = Sinatra::Application
+describe 'This site', :sitespec do
+  let(:app) { Sinatra::Application }
 
-describe 'This site' do
-  include Sitespec
-
-  it do
-    get '/index.html'
-    get '/events/index.html'
-    get '/links/index.html'
-    get '/broadcast/index.html'
-    get '/jobs/index.html'
-    get '/stylesheets/style.css'
-    get '/images/favicon.ico'
-    get '/images/geeaki_living.jpg'
-    get '/images/arduino_meetup.jpg'
-    get '/images/drinkup_03.jpg'
+  %w[
+    /index.html
+    /stylesheets/style.css
+    /javascripts/script.js
+    /images/favicon.ico
+    /images/logo.png
+    /images/7wonders.jpg
+    /images/drinkup_03.jpg
+    /images/overlay_light_diagonal.png
+  ].each do |path|
+    describe "GET #{path}" do
+      subject { get(path).status }
+      it { is_expected.to eq 200 }
+    end
   end
 end
