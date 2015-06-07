@@ -28,7 +28,6 @@ a {
 .main {
   clear: both;
   padding: 10px 20px 20px;
-  background: #fff;
 }
 
 header, footer {
@@ -63,23 +62,94 @@ img, iframe {
   color: #d30;
 }
 
-nav {
-  background: #fff;
-  padding: 10px 0 20px;
-  ul {
-    list-style-type: none;
+h2 {
+  text-align: center;
+}
+
+.menubar {
+  position: fixed;
+  top: 0px;
+  height: 80px;
+  width: 100%;
+  z-index: 9999;
+  background-color: #FFF;
+  margin-top: -80px;
+  -moz-box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+
+  a.logo {
+    float: left;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/logo.png);
+    margin: 27px 0px 0px 40px;
+  }
+
+  ul.mainmenu {
+    float: right;
+    margin: 0px 40px 0px 0px;
+    text-transform: uppercase;
+
     li {
-      float: left;
-      line-height: 20px;
+      cursor: pointer;
+      display: inline-block;
+      padding: 30px 10px 31px 10px;
+
       a {
-        display: block;
-        padding: 0 20px;
-        border-right: 1px solid #ccc;
-        color: #333;
+        color: #838282;
+        -webkit-transition: color 400ms ease;
+        -moz-transition: color 400ms ease;
+        -o-transition: color 400ms ease;
+        -ms-transition: color 400ms ease;
+        transition: color 400ms ease;
+        &:hover, &:focus {
+          color: #f30;
+        }
       }
-      &:last-child a {
-        border-right: none;
+
+      &.active a {
+        font-weight: bold;
       }
     }
+  }
+}
+
+.hero {
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/7wonders.jpg);
+  background-size: cover;
+
+  .overlay {
+    background-image: url(../images/overlay_light_diagonal.png);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-repeat: repeat;
+  }
+
+  h1 {
+    position: absolute;
+    top: 50%;
+    height: 40px;
+    margin-top: -40px;
+    width: 100%;
+    text-align: center;
+    color: #FFF;
+    font-size: 40px;
+  }
+
+  a.scrolldown {
+    display: block;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
   }
 }
