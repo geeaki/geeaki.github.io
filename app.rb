@@ -4,27 +4,19 @@ require 'bundler/setup'
 Bundler.require(:default)
 require 'yaml'
 
-use Rack::Static, :urls => ['/images']
+use Rack::Static, :urls => ['/images', '/javascripts']
 
 helpers do
   def config_path
     "#{settings.root}/config"
   end
 
-  def page_name
+  def request_page_name
     request.path_info.scan(%r[^/(\w+)/]).flatten.first || 'index'
   end
 
-  def page_title
-    {
-      'events' => 'イベント',
-      'links' => 'リンク集',
-      'broadcast' => '配信',
-      'jobs' => 'ジョブボード',
-    }[page_name]
-  end
-
-  def page
+  def page page_name = nil
+    page_name ||= request_page_name
     File.read("#{settings.root}/pages/#{page_name}.md")
   end
 

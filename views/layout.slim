@@ -1,33 +1,41 @@
 html
   head
     meta charset='utf-8'
-    title #{[page_title, 'ギークハウス神田秋葉原'].compact.join(' | ')}
+    title ギークハウス神田秋葉原
     link rel='stylesheet' type='text/css' href='/stylesheets/style.css'
     link rel='icon' type="image/ico" href='/images/favicon.ico'
+    script src="//code.jquery.com/jquery-2.1.4.min.js" type="text/javascript"
+    script src="/javascripts/script.js" type="text/javascript"
   body
-    div.container
-      header
-        h1
-          a href='/' ギークハウス神田<span class="aki">秋</span>葉原
-      nav
-        ul
-          li
-            a href='/' ホーム
-          li
-            a href='/events/' イベント
-          li
-            a href='/links/' リンク
-          li
-            a href='/broadcast/' 配信
-          li
-            a href='/jobs/' ジョブボード
-      div.main
+    .menubar data-scroll="true"
+      a.logo href="#"
+      ul.mainmenu
+        li.active
+          a href="#home" ホーム
+        li
+          a href="#about" 物件概要
+        li
+          a href="#events" イベント
+        li
+          a href="#links" リンク
+        li
+          a href="#contact" お問い合わせ
+    a#home.scroll
+    .hero
+      .overlay
+      h1 ギークハウス神田<span class="aki">秋</span>葉原
+      a.scrolldown href='#' More
+
+    .container
+      .main
         == yield
+
       footer
-        'お問い合わせ:
+        strong#contact お問い合わせ
+        ':
         a href='https://twitter.com/geeaki' @geeaki
         br
-        'Powerd by:
+        'Powered by:
         a href='http://www.sinatrarb.com/' Sinatra
         '  /
         a href='https://github.com/r7kamura/sitespec' Sitespec
@@ -35,7 +43,3 @@ html
         a href='https://pages.github.com/' GitHub Pages
         '  /
         a href='https://travis-ci.org/' Travis CI
-
-    .github-fork-ribbon-wrapper.left
-      .github-fork-ribbon
-        a href='#moving_flow' title='入居までの流れ' 入居者募集中
