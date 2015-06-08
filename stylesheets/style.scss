@@ -18,6 +18,10 @@ a {
   &:hover, &:focus {
     color: #f30;
   }
+
+  img {
+    display: inline;
+  }
 }
 
 .container {
